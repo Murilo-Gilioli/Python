@@ -28,11 +28,11 @@ third_Test = l1 + l3 > l2
 if first_Test and second_Test and third_Test:
     print('É Possivel fazer um Triangulo com essas Retas.')
 
-    if l1 == l2 and l1 == l3:
+    if l1 == l2 and l1 == l3 and l2 == l3:
         print(f'E ele seria um Triangulo {colors["red_Color"]} Equilátero. {colors["default_Color"]}')
-    elif l1 == l2 or l1 == l3:
+    elif l1 == l2 or l1 == l3 or l2 == l3:
         print(f'E ele seria um Triangulo {colors["green_Color"]} Isósceles. {colors["default_Color"]}')
-    elif l1 != l2 and l1 != l3:
+    elif l1 != l2 and l1 != l3 and l2 != l3:
         print(f'E ele seria um Triangulo {colors["yellow_Color"]} Escaleno. {colors["default_Color"]}')
 else:
-    print('nao é Possivel fazer um Triangulo com essas Retas')
+    print('nao é Possivel fazer um Triangulo com essas Retas.')

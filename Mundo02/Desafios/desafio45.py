@@ -1,8 +1,6 @@
 """
 DESAFIO 045
-
 Crie um Programa que faça o computador jogar Jokenpô com voce.
-
 Assistir até: Aula 12
 """
 import random;
@@ -12,7 +10,6 @@ computer = random.choice(jokenpo)
 print("==" * 10)
 print("VAMOS JOGAR JOKENPO!")
 print("==" * 10)
-
 print("Escolha um e Veremos quem Irá Ganhar.")
 print("Pedra, Papel, Tesoura")
 player = str(input(": ").strip().capitalize())

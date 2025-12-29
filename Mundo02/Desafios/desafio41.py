@@ -6,7 +6,7 @@ A confederação nacional de nataçao precisa de um programa que leia o ano de n
 - até 9 anos: MIRIM
 - até 14 anos: INFANTIL
 - até 19 anos: JUNIOR
-- até 20 anos: SÊNIOR
+- até 25 anos: SÊNIOR
 - Acima: MASTER
 
 Assistir até: Aula 12
@@ -26,8 +26,8 @@ else :
      print(f"Voce tem {current_Age} Anos, a Sua Categoria é: INFANTIL")
     elif current_Age == 19:
      print(f"Voce tem {current_Age} Anos, a Sua Categoria é: JUNIOR")
-    elif current_Age == 20:
+    elif current_Age >= 25:
       print(f"Voce tem {current_Age} Anos, a Sua Categoria é: SÊNIOR")
-    elif current_Age >= 21:
+    else:
      print(f"Voce tem {current_Age} Anos, a Sua Categoria é: MASTER")
 
