@@ -9,7 +9,6 @@ Desenvolva um programa que leia o "Nome", "Idade" e "Sexo" de 4 pessoas. No fina
 
 Assistir até: Aula 13
 """
-
 soma = 0
 media_Age = 0
 oldest_Age = 0
@@ -23,10 +22,6 @@ for people in range(1,5):
     age = int(input("Idade: "))
     gender = str(input("Genero (F/M): ")).title().strip()
 
-    # Media de Idade (Calculada).
-    soma += age
-    media_Age = soma / 4
-
     # Nome e Idade do Homem mais Velho (Encontrado).
     if gender == "M" and age > oldest_Age:
         oldest_Age = age
@@ -35,6 +30,10 @@ for people in range(1,5):
     # Quantas Mulheres tem menos de 20 Anos (Encontrado).
     if gender == "F" and age < 20:
         younger_Women += 1
+
+# Media de Idade (Calculada).
+soma += age
+media_Age = soma / 4
 
 print(f"a Media de idade desse grupo é de {media_Age} Anos.")
 print(f"o Homem mais Velho desse grupo tem {oldest_Age} Anos e se Chama {oldest_Name}.")
