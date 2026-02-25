@@ -1,19 +1,61 @@
-print("=" * 30)
-print("     10 TERMOS DE UMA P.A      ")
-print("=" * 30)
+valores = []
+# print(valores)
+# valores.remove(2)
+# print(valores)
 
-first = int(input("Primeiro Termo: "))
-num = int(input("Razão: "))
-terms = 10
+# while 2 in valores:
+#     valores.remove(2)
+# print(valores)
 
-def whileTest(terms,first,num):
+# for valor in range(0,5):
+#     valores.append(int(input("Digite um Valor: ")))
 
-    while terms != 0:
-        print(first, end=" → ")
-        first += num
-        terms -= 1
-        print(terms)
-        if terms == 0:
-            terms += int(input(""))
+# for c,v in enumerate(valores):
+#     print(f"Valor: {v} na Casa: {c}...")
+# print("Cheguei ao Final da Lista")
 
-whileTest(terms, first, num)
+a = [2,3,4,7]
+b = a[:]
+b[2] = 8
+
+valor = []
+valorEx = [
+    ["mari", [3,4]],
+    ["maria", [5,6]],
+    ["marias", [7,8]],
+    ["mariasd", [9,10]]
+]
+
+valor1 = "joao"
+valor2 = 1
+valor3 = 2
+
+valor.append([valor1, [valor2, valor3]])
+
+print(valorEx)
+
+for pos, valor in enumerate(valorEx):
+    print(pos)
+
+# print(f"{pos:<3} {aluno[0]:<10} {media:>10}") -- Alinha a Esquerda, Direita...
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+    aluno = []
+    nota = []
+    aluno.append(nomealuno)
+    nota.append(nota1)
+    nota.append(nota2)
+    aluno.clear()
+    nota.clear()
+"""
