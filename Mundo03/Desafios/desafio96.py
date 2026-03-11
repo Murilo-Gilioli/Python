@@ -1,0 +1,14 @@
+"""
+DESAFIO 096
+
+Faça um programa que tenha uma função chamada área(), que receba as dimensões de um terreno retangular (largura e comprimento) e mostre a área do terreno.
+
+Assistir até: Aula 20
+"""
+def area(larg, comp):
+    a = larg * comp
+    print(f"a Area de {larg}x{comp} são: {a}m²")
+
+largura = float(input("Largura: "))
+comprimento = float(input("Comprimento: "))
+area(largura, comprimento)
